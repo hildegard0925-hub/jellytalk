@@ -6,7 +6,20 @@
   font-family: 'JapaneseFont';
   src: url('../assets/fonts/MjWhaleSans_K.ttf');
 }
+/* 모바일 탭 하이라이트 제거 */
+*, *::before, *::after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-touch-callout: none;
+}
 
+button, a, div, img {
+  -webkit-tap-highlight-color: transparent !important;
+  touch-action: manipulation;
+}
+
+*:focus-visible {
+  outline: none !important;
+}
 body {
   margin: 0;
 
@@ -19,8 +32,9 @@ body {
   color: #6e5a61;
 
   overflow-x: hidden;
-}
 
+  overflow-y: scroll;
+}
 .app {
   margin: 0 auto;
 
@@ -74,7 +88,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
-  width: min(calc(100vw - 40px), 480px);
+  width: calc(100% - 32px);
+
+  max-width: 488px;
 
   bottom: 10px;
 
@@ -107,20 +123,13 @@ body {
   cursor: pointer;
 
   transition:
-    background-color 0.15s;
+    background-color 0.15s,
+    transform 0.15s;
 }
-
 .menu-item.active {
-
-  background-color:
-    rgba(243, 216, 222, 0.50);
+  background-color: rgba(243, 216, 222, 0.50);
+  transform: translateY(-3px);
 }
-
-.menu-item.active .menu-icon {
-
-  margin-top: -6px;
-}
-
 .menu-icon {
 
   margin-top: 0;
