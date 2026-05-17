@@ -1,1 +1,17 @@
 @import "tailwindcss";
+* {
+
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+button,
+img,
+.map-place-button,
+.mission-card {
+
+  -webkit-user-select: none;
+
+  user-select: none;
+
+}
