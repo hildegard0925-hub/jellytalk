@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'PixelFont';
+  src: url('../assets/fonts/AaCassiopeia.ttf');
+}
+@font-face {
+  font-family: 'JapaneseFont';
+  src: url('../assets/fonts/MjWhaleSans_K.ttf');
+}
+
+body {
+  margin: 0;
+
+  background-color: #f7f2f2;
+
+  font-family: 'PixelFont';
+
+  image-rendering: pixelated;
+
+  color: #6e5a61;
+
+  overflow-x: hidden;
+}
+
+.app {
+  margin: 0 auto;
+
+  position: relative;
+
+  width: 100%;
+  max-width: 520px;
+  max-width: 520px;
+
+  min-height: 100dvh;
+
+  padding: 16px 16px 150px;
+
+  overflow-y: auto;
+  overflow-x: visible;
+
+  box-sizing: border-box;
+
+  scrollbar-width: none;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #b98f99;
+
+  text-shadow: 3px 3px 0 #ead3d8;
+}
+
+.title-icon {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+
+  image-rendering: pixelated;
+}
+.bottom-menu {
+  position: fixed;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(calc(100vw - 40px), 480px);
+
+  bottom: 10px;
+
+  padding-top: 8px;
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  z-index: 100;
+
+  background-color: #f7f2f2;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  flex: 1;
+  min-width: 0;
+
+  padding: 10px 2px 6px;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s;
+}
+
+.menu-item.active {
+
+  background-color:
+    rgba(243, 216, 222, 0.50);
+}
+
+.menu-item.active .menu-icon {
+
+  margin-top: -6px;
+}
+
+.menu-icon {
+
+  margin-top: 0;
+
+  width: 48px;
+  height: 48px;
+
+  object-fit: contain;
+
+  image-rendering: pixelated;
+}
+
+.menu-label {
+  font-size: 12px;
+
+  color: #7b6269;
+}
+
+@media (max-width: 768px) {
+
+  .menu-label {
+    font-size: 12px;
+  }
+
+}
+
+button:active {
+
+  scale: 1;
+}

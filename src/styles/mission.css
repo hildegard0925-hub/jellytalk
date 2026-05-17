@@ -1,0 +1,113 @@
+
+.mission-title {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.mission-info {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.start-button {
+  margin-top: 5px;
+
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #cfa5af;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-family: 'PixelFont';
+
+  cursor: pointer;
+
+  transition: 0.15s;
+}
+
+.start-button:hover {
+
+  background-color: #e89aae;
+}
+
+.mission-card:hover {
+
+  transform: none;
+}
+
+.mission-popup {
+  position: absolute;
+
+  left: 50%;
+  bottom: 2px;
+
+  transform: translateX(-50%);
+
+  width: min(420px, calc(100% - 32px));
+
+  padding: 10px;
+
+  background-color: rgba(255, 250, 250, 0.96);
+
+  border: 3px solid #d8b4bc;
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+
+  z-index: 30;
+
+  animation: missionPopupFade 0.2s ease;
+}
+
+
+@keyframes missionPopupFade {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-50%)
+      translateY(8px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(-50%)
+      translateY(0)
+      scale(1);
+  }
+}
+.mission-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.difficulty-icon {
+  width: 16px;
+  height: 16px;
+
+  image-rendering: pixelated;
+
+  flex-shrink: 0;
+}
+
+.mission-text {
+  line-height: 1.4;
+}

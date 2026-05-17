@@ -1,0 +1,165 @@
+.adventure-page {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.player-card,
+.mission-section,
+.streak-section,
+.recent-section {
+
+  margin-bottom: 10px;
+
+  padding: 15px;
+
+  background: #fffafa;
+
+  border: 2px solid #d8b4bc;
+
+  border-radius: 16px;
+}
+.mission-section h3,
+.streak-section h3,
+.recent-section h3 {
+
+  margin: 5px 0 10px 0;
+
+  line-height: 1;
+
+  font-size: 22px;
+}
+.exp-bar-wrapper {
+
+  width: 100%;
+
+  height: 18px;
+
+  margin-top: 12px;
+
+  background: #f3dce2;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.exp-bar-fill {
+
+  height: 100%;
+
+  background: #ff9eb5;
+}
+
+.mission-card {
+
+  margin-top: 12px;
+}
+
+.claim-button {
+
+  margin-top: 12px;
+
+  padding: 10px 16px;
+
+  background: #ffb7c8;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+.claim-button,
+.claim-button:hover,
+.claim-button:active,
+.claim-button:focus {
+
+  transform: none !important;
+
+  translate: none !important;
+
+  scale: 1 !important;
+
+  top: auto !important;
+
+  position: static !important;
+
+  box-shadow: none !important;
+}
+.heart-row {
+
+  display: flex;
+
+  gap: 4px;
+
+  font-size: 24px;
+}
+
+.recent-item {
+
+  margin-top: 8px;
+}
+
+.empty-text {
+
+  opacity: 0.6;
+}
+.settings-page {
+
+  padding: 24px;
+}
+
+.reset-save-button {
+
+  margin-top: 20px;
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #e8b4bc;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+.level-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 10px;
+}
+
+.level-title {
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  line-height: 1;
+}
+
+.level-strawberry {
+
+  width: 28px;
+
+  height: 28px;
+
+  object-fit: contain;
+
+  image-rendering: pixelated;
+}
+.level-strawberry.hidden {
+
+  opacity: 0;
+}

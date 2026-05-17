@@ -1,0 +1,100 @@
+.story-complete-button {
+
+  margin-top: 10px;
+
+  padding: 8px 16px;
+
+  background: #f6c8d5;
+
+  border: 2px solid #d99cad;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  font-family: 'PixelFont';
+
+  color: #6d4452;
+
+  cursor: pointer;
+
+  box-shadow:
+    3px 3px 0 #e8b6c3;
+
+  transition:
+    transform 0.12s,
+    opacity 0.12s;
+
+}
+
+.story-complete-button:hover {
+
+  opacity: 0.92;
+
+}
+
+.story-complete-button:active {
+
+  transform:
+    translateY(2px);
+
+  box-shadow:
+    1px 1px 0 #e8b6c3;
+
+}
+.story-summary-card {
+
+  margin-top: 5px;
+
+  margin-bottom: 0px;
+
+  padding: 10px 12px 10px;
+
+  background: #fff7fb;
+
+  border: 2px solid #f0d3dc;
+
+  border-radius: 12px;
+
+  white-space: pre-line;
+
+  line-height: 1.7;
+
+  color: #7b5160;
+
+  font-size: 14px;
+
+}
+.story-note-textarea {
+
+  width: 100%;
+
+  min-height: 70px;
+
+  margin-top: 8px;
+
+  padding: 8px 14px;
+
+  border: 2px solid #e7b8c7;
+
+  border-radius: 12px;
+
+  background: #fffafd;
+
+  color: #7b5160;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  resize: none;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  font-family: 'PixelFont';
+
+  outline: none;
+
+}

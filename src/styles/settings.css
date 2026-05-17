@@ -1,0 +1,81 @@
+.settings-page {
+
+  padding: 32px;
+
+}
+
+.settings-title {
+
+  margin-bottom: 28px;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  color: #c48f9b;
+
+}
+
+.settings-section {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+}
+
+.settings-button {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background-color: #d8b4bc;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  box-shadow: 0 4px 0 #c48f9b;
+
+}
+
+.settings-button:hover {
+
+  transform: translateY(2px);
+
+  box-shadow: 0 2px 0 #c48f9b;
+
+}
+
+.settings-file-label {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
