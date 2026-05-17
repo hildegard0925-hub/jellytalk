@@ -80,7 +80,7 @@ const useAdventureStore = create(
 
         place,
 
-        remainingSeconds: 5,
+        remainingSeconds: 1800,
 
         isRunning: true,
       },
