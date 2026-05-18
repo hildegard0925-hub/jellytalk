@@ -107,30 +107,23 @@ function HomePage({
         selectedPlace.id
       ]
 
-    if (!firstMission) {
+    if (
+      !selectedMissions ||
+      selectedMissions.length === 0
+    ) {
       return
     }
 
     startMission({
-
       missions: selectedMissions,
-
       place: selectedPlace,
     })
-
-    const prompt =
-      `
-    ${buildMissionPrompt(
-      firstMission,
-      selectedPlace.category
-    )}
 
     const prompt =
       buildMissionPrompt(
         selectedMissions,
         selectedPlace.category
       )
-    `
 
     const encodedPrompt =
       encodeURIComponent(prompt)
@@ -141,7 +134,6 @@ function HomePage({
     )
 
     setSelectedPlace(null)
-
   }
 
   return (
