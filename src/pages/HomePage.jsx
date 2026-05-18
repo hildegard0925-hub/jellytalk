@@ -107,9 +107,6 @@ function HomePage({
         selectedPlace.id
       ]
 
-    const firstMission =
-      selectedMissions?.[0]
-
     if (!firstMission) {
       return
     }
@@ -121,19 +118,6 @@ function HomePage({
       place: selectedPlace,
     })
 
-    const missionListText =
-      selectedMissions
-        .map((mission, index) => {
-
-          return `
-    ${index + 1}. ${mission.text}
-    - 상황:
-    ${mission.prompt}
-    `
-
-        })
-        .join('\n')
-
     const prompt =
       `
     ${buildMissionPrompt(
@@ -141,13 +125,11 @@ function HomePage({
       selectedPlace.category
     )}
 
-    오늘의 미션:
-    ${missionListText}
-
-    규칙:
-    - 현재는 첫 번째 미션부터 시작하세요.
-    - 첫 번째 미션이 끝나면 다음 미션으로 자연스럽게 이어가세요.
-    - 사용자의 일본어 실력에 맞춰 대화를 이어가세요.
+    const prompt =
+      buildMissionPrompt(
+        selectedMissions,
+        selectedPlace.category
+      )
     `
 
     const encodedPrompt =

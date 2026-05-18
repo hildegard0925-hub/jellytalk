@@ -1,3 +1,15 @@
+import moodPools from '../content/cities/fukuoka/missions/moodPools'
+import personalityPools from '../content/cities/fukuoka/missions/personalityPools'
+
+function getRandomItem(array) {
+  if (!array || array.length === 0) {
+    return ''
+  }
+
+  return array[
+    Math.floor(Math.random() * array.length)
+  ]
+}
 const categoryRoles = {
 
   airport: `
@@ -132,30 +144,55 @@ const categoryRoles = {
 }
 
 export function buildMissionPrompt(
-  mission,
+  missions,
   category
 ) {
 
   const rolePrompt =
-    categoryRoles[category] ||
-    `
-당신은 일본 현지 직원입니다.
+    categoryRoles[category] || ''
 
-사용자는 일본 여행 중인 한국인 여행자입니다.
-자연스럽게 일본어로 대화를 이어가세요.
-`
+  const currentMission =
+    missions[0]
+
+  const nextMissions =
+    missions.slice(1)
+
+  const randomMood =
+    getRandomItem(
+      moodPools[category] || []
+    )
+
+  const randomPersonality =
+    getRandomItem(
+      personalityPools
+    )
 
   return `
 ${rolePrompt}
 
-현재 상황:
-${mission.prompt}
+오늘 분위기:
+${randomMood}
+
+직원 성격:
+${randomPersonality}
+
+현재 상황에서:
+${currentMission.prompt}
+
+대화 중 자연스럽게 아래 상황들도 포함하세요:
+${nextMissions
+  .map(
+    (mission) =>
+      `- ${mission.text}`
+  )
+  .join('\n')}
 
 규칙:
 - 반드시 일본어로만 대화하세요.
 - 너무 긴 문장은 피하세요.
-- 실제 일본 현지처럼 자연스럽게 반응하세요.
-- 사용자의 일본어가 틀려도 대화를 이어가세요.
+- 사용자가 많이 말하도록 유도하세요.
+- 너무 빨리 대화를 끝내지 마세요.
+- 상황을 자연스럽게 이어가세요.
 `
 }
 
