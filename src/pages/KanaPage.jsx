@@ -26,6 +26,38 @@ const kanaList = [
   { hira: "て", hiraKo: "테", kata: "テ", kataKo: "테" },
   { hira: "と", hiraKo: "토", kata: "ト", kataKo: "토" },
 
+  { hira: "な", hiraKo: "나", kata: "ナ", kataKo: "나" },
+  { hira: "に", hiraKo: "니", kata: "ニ", kataKo: "니" },
+  { hira: "ぬ", hiraKo: "누", kata: "ヌ", kataKo: "누" },
+  { hira: "ね", hiraKo: "네", kata: "ネ", kataKo: "네" },
+  { hira: "の", hiraKo: "노", kata: "ノ", kataKo: "노" },
+
+  { hira: "は", hiraKo: "하", kata: "ハ", kataKo: "하" },
+  { hira: "ひ", hiraKo: "히", kata: "ヒ", kataKo: "히" },
+  { hira: "ふ", hiraKo: "후", kata: "フ", kataKo: "후" },
+  { hira: "へ", hiraKo: "헤", kata: "ヘ", kataKo: "헤" },
+  { hira: "ほ", hiraKo: "호", kata: "ホ", kataKo: "호" },
+
+  { hira: "ま", hiraKo: "마", kata: "マ", kataKo: "마" },
+  { hira: "み", hiraKo: "미", kata: "ミ", kataKo: "미" },
+  { hira: "む", hiraKo: "무", kata: "ム", kataKo: "무" },
+  { hira: "め", hiraKo: "메", kata: "メ", kataKo: "메" },
+  { hira: "も", hiraKo: "모", kata: "モ", kataKo: "모" },
+
+  { hira: "や", hiraKo: "야", kata: "ヤ", kataKo: "야" },
+  { hira: "ゆ", hiraKo: "유", kata: "ユ", kataKo: "유" },
+  { hira: "よ", hiraKo: "요", kata: "ヨ", kataKo: "요" },
+
+  { hira: "ら", hiraKo: "라", kata: "ラ", kataKo: "라" },
+  { hira: "り", hiraKo: "리", kata: "リ", kataKo: "리" },
+  { hira: "る", hiraKo: "루", kata: "ル", kataKo: "루" },
+  { hira: "れ", hiraKo: "레", kata: "レ", kataKo: "레" },
+  { hira: "ろ", hiraKo: "로", kata: "ロ", kataKo: "로" },
+
+  { hira: "わ", hiraKo: "와", kata: "ワ", kataKo: "와" },
+  { hira: "を", hiraKo: "오", kata: "ヲ", kataKo: "오" },
+  { hira: "ん", hiraKo: "응", kata: "ン", kataKo: "응" },
+
 ]
 
 function KanaPage() {
