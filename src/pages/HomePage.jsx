@@ -151,11 +151,7 @@ function HomePage({
     >
 
       <h1 className="title">
-        <img
-            src="paw.png"
-            alt="paw"
-            className="title-icon"
-        /> JellyTalk
+        JellyTalk
       </h1>
 
       <div className="subtitle-row">
